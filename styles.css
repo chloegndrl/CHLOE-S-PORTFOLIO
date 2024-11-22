@@ -1,0 +1,206 @@
+/* Top Left Label Styling */
+.top-left-label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Section Background */
+.section-bg {
+    display: flex;
+    background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
+    background-size: cover;
+    height: 100vh; /* Ensure the section covers full screen height */
+}
+
+/* Profile Image Styling */
+.profile-img {
+    max-width: 450px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure it scales down on smaller screens */
+}
+
+/* Gradient Content Section */
+.highlight {
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* Vertical Button Styling */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.buttons .btn {
+    width: 50%; /* Optional: Adjust width of buttons */
+    margin: 0 auto; /* Center buttons horizontally */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem; /* Larger heading size */
+    font-weight: bold; /* Emphasize heading */
+    color: #333; /* Dark gray for readability */
+    text-transform: capitalize; /* Capitalize each word */
+    margin-bottom: 20px;
+}
+
+/* Highlighted Name */
+.highlight {
+    color: #d63384; /* Vibrant pink */
+    font-style: italic; /* Adds a stylish look */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #555; /* Softer gray for contrast */
+    line-height: 1.8; /* Better readability with spacing */
+    margin-bottom: 20px;
+}
+
+/* Icons in Paragraph */
+p i {
+    color: #d63384; /* Match the highlight color */
+    margin-right: 8px; /* Space between the icon and text */
+}
+
+/* General Button Styling */
+.buttons .btn {
+    font-size: 1rem; /* Standard button text */
+    padding: 10px 20px; /* Add padding for larger buttons */
+    border-radius: 5px; /* Rounded edges */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.buttons .btn-outline-dark:hover {
+    background-color: #d63384; /* Pink background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #d63384; /* Match border with background */
+}
+
+.buttons .btn-dark {
+    background-color: #333; /* Default dark background */
+    border-color: #333;
+    color: #fff; /* White text */
+}
+
+.buttons .btn-dark:hover {
+    background-color: #d63384; /* Pink background on hover */
+    border-color: #d63384; /* Match border with background */
+}
+
+/* Spacing between Buttons */
+.buttons .btn + .btn {
+    margin-top: 10px; /* Add vertical spacing between buttons */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile phones, 600px and below) */
+@media (max-width: 600px) {
+    .top-left-label {
+        font-size: 0.9rem;
+        left: 10px;
+        top: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller heading */
+        text-align: center; /* Center align heading */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller text */
+    }
+
+    .buttons .btn {
+        width: 80%; /* Make buttons wider on smaller screens */
+    }
+
+    .profile-img {
+        max-width: 250px; /* Reduce profile image size */
+    }
+
+    .section-bg {
+        flex-direction: column; /* Stack content vertically */
+        background-position: top center;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 100%; /* Make columns take full width on mobile */
+        max-width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem; /* Larger icons for easier clicking */
+    }
+}
+
+/* For medium devices (tablets, 768px and above) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Medium-sized heading */
+    }
+
+    p {
+        font-size: 1.1rem; /* Medium-sized paragraph */
+    }
+
+    .profile-img {
+        max-width: 300px; /* Adjust profile image size */
+    }
+
+    .buttons .btn {
+        width: 70%; /* Adjust button width */
+    }
+
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Section Background */
+.section-bg {
+    display: flex;
+    background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
+    background-size: cover, cover; /* Ensures background image covers the section */
+    height: 100vh; /* Full viewport height */
+}
+
+/* For small devices (mobile phones, 600px and below) */
+@media (max-width: 600px) {
+    .section-bg {
+        background: linear-gradient(to left, #f9dad8 50%, transparent 50%); /* Only gradient on small screens */
+        background-size: 100% 100%; /* Make sure gradient covers the area */
+        background-image: linear-gradient(to left, #f9dad8 50%, transparent 50%); /* Only gradient */
+    }
+}
+
+/* For medium devices (tablets, 768px and above) */
+@media (max-width: 768px) {
+    .section-bg {
+        background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
+        background-size: cover, cover; /* Gradient + PNG on tablets and up */
+    }
+}
+
+/* For larger screens (desktops and above) */
+@media (min-width: 769px) {
+    .section-bg {
+        background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
+        background-size: cover, cover; /* Keep both the gradient and image for larger screens */
+    }
+}
