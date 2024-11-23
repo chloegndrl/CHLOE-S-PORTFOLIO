@@ -16,7 +16,7 @@
     display: flex;
     background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
     background-size: cover;
-    height: 100vh; /* Ensure the section covers full screen height */
+    height: 100vh; 
 }
 
 /* Profile Image Styling */
@@ -25,7 +25,7 @@
     object-fit: cover;
     border: 5px solid #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure it scales down on smaller screens */
+    width: 100%; 
 }
 
 /* Gradient Content Section */
@@ -38,72 +38,72 @@
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between buttons */
+    gap: 10px; 
 }
 
 .buttons .btn {
-    width: 50%; /* Optional: Adjust width of buttons */
-    margin: 0 auto; /* Center buttons horizontally */
+    width: 50%; 
+    margin: 0 auto; 
 }
 
 /* Heading Styling */
 h1 {
-    font-size: 2.5rem; /* Larger heading size */
-    font-weight: bold; /* Emphasize heading */
-    color: #333; /* Dark gray for readability */
-    text-transform: capitalize; /* Capitalize each word */
+    font-size: 2.5rem;
+    font-weight: bold; 
+    color: #333; 
+    text-transform: capitalize; 
     margin-bottom: 20px;
 }
 
 /* Highlighted Name */
 .highlight {
-    color: #d63384; /* Vibrant pink */
-    font-style: italic; /* Adds a stylish look */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    color: #d63384; 
+    font-style: italic; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Paragraph Styling */
 p {
-    font-size: 1.2rem; /* Slightly larger text */
-    color: #555; /* Softer gray for contrast */
-    line-height: 1.8; /* Better readability with spacing */
+    font-size: 1.2rem; 
+    color: #555; 
+    line-height: 1.8; 
     margin-bottom: 20px;
 }
 
 /* Icons in Paragraph */
 p i {
-    color: #d63384; /* Match the highlight color */
-    margin-right: 8px; /* Space between the icon and text */
+    color: #d63384; 
+    margin-right: 8px; 
 }
 
 /* General Button Styling */
 .buttons .btn {
-    font-size: 1rem; /* Standard button text */
-    padding: 10px 20px; /* Add padding for larger buttons */
-    border-radius: 5px; /* Rounded edges */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    font-size: 1rem; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
 }
 
 .buttons .btn-outline-dark:hover {
-    background-color: #d63384; /* Pink background on hover */
-    color: #fff; /* White text on hover */
-    border-color: #d63384; /* Match border with background */
+    background-color: #d63384; 
+    color: #fff;
+    border-color: #d63384; 
 }
 
 .buttons .btn-dark {
-    background-color: #333; /* Default dark background */
+    background-color: #333;
     border-color: #333;
-    color: #fff; /* White text */
+    color: #fff; 
 }
 
 .buttons .btn-dark:hover {
-    background-color: #d63384; /* Pink background on hover */
-    border-color: #d63384; /* Match border with background */
+    background-color: #d63384; 
+    border-color: #d63384; 
 }
 
 /* Spacing between Buttons */
 .buttons .btn + .btn {
-    margin-top: 10px; /* Add vertical spacing between buttons */
+    margin-top: 10px; 
 }
 
 /* Media Queries for Responsiveness */
@@ -117,53 +117,52 @@ p i {
     }
 
     h1 {
-        font-size: 1.8rem; /* Smaller heading */
-        text-align: center; /* Center align heading */
+        font-size: 1.8rem; 
+        text-align: center; 
     }
 
     p {
-        font-size: 1rem; /* Smaller text */
+        font-size: 1rem; 
     }
 
     .buttons .btn {
-        width: 80%; /* Make buttons wider on smaller screens */
+        width: 80%; 
     }
 
     .profile-img {
-        max-width: 250px; /* Reduce profile image size */
+        max-width: 250px; 
     }
 
     .section-bg {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
         background-position: top center;
     }
 
     .col-lg-6 {
-        flex: 0 0 100%; /* Make columns take full width on mobile */
+        flex: 0 0 100%; 
         max-width: 100%;
     }
 
     .social-icons a {
-        font-size: 1.5rem; /* Larger icons for easier clicking */
+        font-size: 1.5rem; 
     }
 }
 
 /* For medium devices (tablets, 768px and above) */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Medium-sized heading */
+        font-size: 2rem; 
     }
 
     p {
-        font-size: 1.1rem; /* Medium-sized paragraph */
+        font-size: 1.1rem; 
     }
 
     .profile-img {
-        max-width: 300px; /* Adjust profile image size */
-    }
+        max-width: 300px; 
 
     .buttons .btn {
-        width: 70%; /* Adjust button width */
+        width: 70%; 
     }
 
     .col-lg-6 {
@@ -176,16 +175,16 @@ p i {
 .section-bg {
     display: flex;
     background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
-    background-size: cover, cover; /* Ensures background image covers the section */
-    height: 100vh; /* Full viewport height */
+    background-size: cover, cover;
+    height: 100vh; 
 }
 
 /* For small devices (mobile phones, 600px and below) */
 @media (max-width: 600px) {
     .section-bg {
-        background: linear-gradient(to left, #f9dad8 50%, transparent 50%); /* Only gradient on small screens */
-        background-size: 100% 100%; /* Make sure gradient covers the area */
-        background-image: linear-gradient(to left, #f9dad8 50%, transparent 50%); /* Only gradient */
+        background: linear-gradient(to left, #f9dad8 50%, transparent 50%); 
+        background-size: 100% 100%; 
+        background-image: linear-gradient(to left, #f9dad8 50%, transparent 50%); 
     }
 }
 
@@ -193,75 +192,72 @@ p i {
 @media (max-width: 768px) {
     .section-bg {
         background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
-        background-size: cover, cover; /* Gradient + PNG on tablets and up */
+        background-size: cover, cover; 
     }
 }
 
-/* For larger screens (desktops and above) */
+
 @media (min-width: 769px) {
     .section-bg {
         background: linear-gradient(to left, #f9dad8 50%, transparent 50%), url('bg.png') no-repeat left;
-        background-size: cover, cover; /* Keep both the gradient and image for larger screens */
+        background-size: cover, cover; 
     }
 }
 
 /* About Page Styling */
-/* Background of the entire About Page */
 #about-page {
-    background-color: #FFBB94; /* Soft peach pink for the page background */
-    padding: 50px 0; /* Adds vertical padding to the page */
+    background-color: #FFBB94; 
+    padding: 50px 0; 
 }
 
 /* Container styling */
 .container {
-    background-color: #FB9590; /* Light coral for the container */
-    border-radius: 15px; /* Rounded edges for a modern feel */
+    background-color: #FB9590; 
+    border-radius: 15px; 
     padding: 40px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
 }
 
 /* Heading Styling */
 #about-page h1 {
-    color: #A33757; /* Deep plum for contrast */
+    color: #A33757; 
     font-weight: bold;
-    text-transform: uppercase; /* Adds a professional look */
+    text-transform: uppercase; 
     text-align: center;
     margin-bottom: 30px;
-    letter-spacing: 1.5px; /* Slight spacing for elegance */
-}
+    letter-spacing: 1.5px; 
 
 /* Paragraph Styling */
 #about-page p {
     font-size: 1.1rem;
-    line-height: 1.8; /* Increased line height for readability */
-    color: #333; /* Neutral dark for better contrast with the pink background */
+    line-height: 1.8; 
+    color: #333; 
     margin-bottom: 20px;
 }
 
 /* Image Styling */
 img {
     max-width: 100%;
-    border-radius: 50%; /* Circular profile image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow for elegance */
+    border-radius: 50%; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
     display: block;
-    margin: 0 auto 20px; /* Center the image and add bottom spacing */
+    margin: 0 auto 20px; 
 }
 
 /* Button Styling */
 .btn-outline-dark {
-    border-color: #DC586D; /* Medium dark pink for the button border */
-    color: #DC586D; /* Matching the text color with the border */
+    border-color: #DC586D;
+    color: #DC586D;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners for a softer look */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
 }
 
 .btn-outline-dark:hover {
-    background-color: #DC586D; /* Medium pink for button background on hover */
-    color: white; /* White text for hover contrast */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
+    background-color: #DC586D; 
+    color: white; 
+    transform: scale(1.05); 
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
@@ -275,14 +271,14 @@ img {
 
 /* Projects Page Styling */
 :root {
-    --bg-color: #FFECEC; /* Soft/light pink background color */
-    --text-color: #852E4E; /* Deep plum for captions and headings */
-    --figcaption-bg: rgba(0, 0, 0, 0.6); /* Semi-transparent black for figcaption */
+    --bg-color: #FFECEC; 
+    --text-color: #852E4E; 
+    --figcaption-bg: rgba(0, 0, 0, 0.6); 
 }
 
 /* Page Background */
 body {
-    background-color: var(--bg-color); /* Soft pink background for the entire page */
+    background-color: var(--bg-color); 
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -303,35 +299,34 @@ h1 {
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    margin: 0 auto; /* Center gallery on the page */
+    margin: 0 auto; 
 }
 
-/* Gallery Item Styling */
+
 .gallery-item {
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    background-color: transparent; /* No background, only image */
-}
+    background-color: transparent;
 
-/* Image Styling */
+
 .gallery-item img {
-    width: 100%; /* Ensures the image fills the container */
-    height: auto; /* Maintain image aspect ratio */
+    width: 100%; 
+    height: auto; 
     display: block;
-    border-radius: 15px; /* Match the container's rounded corners */
+    border-radius: 15px; 
     transition: transform 0.3s ease;
 }
 
-/* Caption Styling */
+
 .gallery-item figure {
     margin: 0;
     position: relative;
 }
 
 .gallery-item figcaption {
-    background-color: var(--figcaption-bg); /* Semi-transparent background */
+    background-color: var(--figcaption-bg); 
     color: white;
     font-size: 1rem;
     text-align: center;
@@ -344,24 +339,24 @@ h1 {
     transition: opacity 0.3s ease;
 }
 
-/* Hover Effects */
+
 .gallery-item:hover figcaption {
-    opacity: 1; /* Display the caption on hover */
+    opacity: 1; 
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
 }
 
-/* Responsive Adjustments */
+
 @media screen and (max-width: 768px) {
     .gallery-item {
-        flex: 1 1 calc(45% - 20px); /* Adjusts for smaller screens */
+        flex: 1 1 calc(45% - 20px); 
     }
 }
 
 @media screen and (max-width: 480px) {
     .gallery-item {
-        flex: 1 1 100%; /* Stacks items on extra small screens */
+        flex: 1 1 100%; 
     }
 }
