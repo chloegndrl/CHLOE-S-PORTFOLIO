@@ -204,3 +204,164 @@ p i {
         background-size: cover, cover; /* Keep both the gradient and image for larger screens */
     }
 }
+
+/* About Page Styling */
+/* Background of the entire About Page */
+#about-page {
+    background-color: #FFBB94; /* Soft peach pink for the page background */
+    padding: 50px 0; /* Adds vertical padding to the page */
+}
+
+/* Container styling */
+.container {
+    background-color: #FB9590; /* Light coral for the container */
+    border-radius: 15px; /* Rounded edges for a modern feel */
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading Styling */
+#about-page h1 {
+    color: #A33757; /* Deep plum for contrast */
+    font-weight: bold;
+    text-transform: uppercase; /* Adds a professional look */
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px; /* Slight spacing for elegance */
+}
+
+/* Paragraph Styling */
+#about-page p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #333; /* Neutral dark for better contrast with the pink background */
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    border-radius: 50%; /* Circular profile image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow for elegance */
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add bottom spacing */
+}
+
+/* Button Styling */
+.btn-outline-dark {
+    border-color: #DC586D; /* Medium dark pink for the button border */
+    color: #DC586D; /* Matching the text color with the border */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for a softer look */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-outline-dark:hover {
+    background-color: #DC586D; /* Medium pink for button background on hover */
+    color: white; /* White text for hover contrast */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #about-page {
+        padding: 30px 0;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
+/* Projects Page Styling */
+:root {
+    --bg-color: #FFECEC; /* Soft/light pink background color */
+    --text-color: #852E4E; /* Deep plum for captions and headings */
+    --figcaption-bg: rgba(0, 0, 0, 0.6); /* Semi-transparent black for figcaption */
+}
+
+/* Page Background */
+body {
+    background-color: var(--bg-color); /* Soft pink background for the entire page */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Styling */
+h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+/* Gallery Section */
+.gallery {
+
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto; /* Center gallery on the page */
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    background-color: transparent; /* No background, only image */
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintain image aspect ratio */
+    display: block;
+    border-radius: 15px; /* Match the container's rounded corners */
+    transition: transform 0.3s ease;
+}
+
+/* Caption Styling */
+.gallery-item figure {
+    margin: 0;
+    position: relative;
+}
+
+.gallery-item figcaption {
+    background-color: var(--figcaption-bg); /* Semi-transparent background */
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover figcaption {
+    opacity: 1; /* Display the caption on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(45% - 20px); /* Adjusts for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* Stacks items on extra small screens */
+    }
+}
